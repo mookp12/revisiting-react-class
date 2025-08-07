@@ -1,4 +1,5 @@
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
+import ProductCard from "./ProductCard"
 
 function ProductHighlight() {
   return (
@@ -6,6 +7,9 @@ function ProductHighlight() {
       <div className="container mx-auto">
         <h2 className="text-2xl font-semibold mb-4">Featured Products</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
           {/* Product Card 1 */}
           <div className="bg-white p-4 shadow-md">
             <img
@@ -24,6 +28,7 @@ function ProductHighlight() {
               </button>
             </div>
           </div>
+          
           {/* Product Card 2 */}
           <div className="bg-white p-4 shadow-md">
             <img
